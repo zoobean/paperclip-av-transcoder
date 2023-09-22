@@ -6,11 +6,11 @@ require 'paperclip/av/transcoder/version'
 Gem::Specification.new do |spec|
   spec.name          = "paperclip-av-transcoder"
   spec.version       = Paperclip::Av::Transcoder::VERSION
-  spec.authors       = ["Omar Abdel-Wahab"]
-  spec.email         = ["owahab@gmail.com"]
+  spec.authors       = ["Omar Abdel-Wahab", "Jade Ornelas"]
+  spec.email         = ["owahab@gmail.com", "jade@zoobean.com"]
   spec.summary       = %q{Audio/Video Transcoder for Paperclip using FFMPEG/Avconv}
   spec.description   = %q{Audio/Video Transcoder for Paperclip using FFMPEG/Avconv}
-  spec.homepage      = "https://github.com/ruby-av/paperclip-av-transcoder"
+  spec.homepage      = "https://github.com/zoobean/paperclip-av-transcoder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
