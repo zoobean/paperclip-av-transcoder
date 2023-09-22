@@ -11,8 +11,8 @@ describe Paperclip::Transcoder do
     let(:document) { Document.create(video: Rack::Test::UploadedFile.new(supported, 'video/mp4')) }
 
     describe ".transcode" do
-      it { expect(File.exists?(document.video.path(:small))).to eq true }
-      it { expect(File.exists?(document.video.path(:thumb))).to eq true }
+      it { expect(File.exist?(document.video.path(:small))).to eq true }
+      it { expect(File.exist?(document.video.path(:thumb))).to eq true }
     end
   end
 
@@ -20,7 +20,7 @@ describe Paperclip::Transcoder do
     let(:subject) { Paperclip::Transcoder.new(unsupported) }
     let(:document) { Document.create(image: Rack::Test::UploadedFile.new(unsupported, 'image/png')) }
     describe ".transcode" do
-      it { expect(File.exists?(document.image.path(:small))).to eq true }
+      it { expect(File.exist?(document.image.path(:small))).to eq true }
     end
   end
 
